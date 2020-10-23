@@ -237,17 +237,33 @@ function getArtistByIndex(array, index) {
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, data){
+function get20s(data){
   const artists20s = [];
-  for (let i = 0; i >= array.length; i++){
-    if (array.includes(data) === true){
-      artists20s.push(array.find(i));
-      return artists20s;
+  for (let i = 0; i < artists.length; i++){
+    if (artists[i].years === data){
+      artists20s.push(artists[i].name);
     };
   }
+  return artists20s;
 }
-console.log(get20s(artists, 1900-2000));
-/* Needs more work */
+
+// console.log(get20s(artists, 1900-2000));
+
+
+// function get20s(array, data){
+//   const artists20s = [];
+//   for (let i = 0; i >= array.length; i++){
+//     if (array.includes(data) === true){
+//       artists20s.push(array.find(i));
+//       return artists20s;
+//     };
+//   }
+// }
+// console.log(get20s(artists, 1900-2000));
+
+/* Needs more work. Unable to get code to pass autograder test */
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -264,7 +280,6 @@ Create a function called `removeArtist` that takes two arguments:
 function removeArtist(array, index) {
   const artistIndex = array.indexOf(index);
   array.splice(artistIndex, 1);
-
   console.log(array.length);
 }
    
@@ -343,7 +358,6 @@ function lotsOfArt(array){
   }
   return artists100;
 }
-
 
 
 
