@@ -139,4 +139,8 @@ button:hover{
 
 @media all and (max-width: 500px){
 
+    .artists-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
