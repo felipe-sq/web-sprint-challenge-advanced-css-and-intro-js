@@ -139,8 +139,26 @@ button:hover{
 
 @media all and (max-width: 500px){
 
+    nav {
+        width:70%;
+    }
+
+    img {	
+        height:20rem;
+    }
+
+    .bio {
+        text-align: justify;
+        width: 100%;
+    }
+
     .artists-container {
         flex-direction: column;
         flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
     }
+
 }
