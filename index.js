@@ -300,18 +300,27 @@ At the end, this function should return the new array with information added"*/
 //   }
 // addArtist();
 
-function addArtist(object){
-  artists.push(object);
+function addArtist(id1, name1, years1, genre1, nationality1, bio1){
+  const newArtist = new Object();
+  newArtist.id = id1;
+  newArtist.name = name1;
+  newArtist.years = years1;
+  newArtist.genre = genre1;
+  newArtist.nationality = nationality1;
+  newArtist.bio = bio1;
+  artists.push(newArtist);
   return artists;
   }
 
-addArtist({
-  id: 20,
-  name: "Felipe Slaughter-Quintero",
-  years: "1983 - Current",
-  genre: "Modern Contemporary",
-  nationality: "American",
-  bio: "Felipe was born in California and studied various forms of art, including drawing, painting, clay sculpture and digital art."});
+addArtist(20, "Felipe Slaughter-Quintero", "1983 - Current", "Modern Contemporary", "American", "Lorem ipsum");
+
+// addArtist({
+//   id: 20,
+//   name: "Felipe Slaughter-Quintero",
+//   years: "1983 - Current",
+//   genre: "Modern Contemporary",
+//   nationality: "American",
+//   bio: "Lorem ipsum"});
 
 /* does not pass the autograder but produces the intended results in console */
   
@@ -325,8 +334,14 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  const artists100 = [];
+  for (let i = 0; i >= 100; i++){
+    if (array[i].paintings >= 100){
+      artists100.push(i);
+    }
+  }
+  return artists100;
 }
 
 
