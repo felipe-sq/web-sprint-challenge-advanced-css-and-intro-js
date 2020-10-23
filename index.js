@@ -268,7 +268,7 @@ function removeArtist(array, index) {
   console.log(array.length);
 }
    
-removeArtist(artists, 1);
+/* does not pass autograder test but produces intended results in the console */
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -284,10 +284,36 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
+/* First set of code -- does not pass autograder but produces intended results in console */
+
+// function addArtist(object){  
+//   artists.push({
+//   id: 20,
+//   name: "Felipe Slaughter-Quintero",
+//   years: "1983 - Current",
+//   genre: "Modern Contemporary",
+//   nationality: "American",
+//   bio: "Felipe was born in California and studied various forms of art, including drawing, painting, clay sculpture and digital art."});
+
+//   artists.push(object);
+//   return artists;
+//   }
+// addArtist();
+
+function addArtist(object){
+  artists.push(object);
+  return artists;
   }
 
+addArtist({
+  id: 20,
+  name: "Felipe Slaughter-Quintero",
+  years: "1983 - Current",
+  genre: "Modern Contemporary",
+  nationality: "American",
+  bio: "Felipe was born in California and studied various forms of art, including drawing, painting, clay sculpture and digital art."});
+
+/* does not pass the autograder but produces the intended results in console */
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
