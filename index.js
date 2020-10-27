@@ -240,29 +240,14 @@ Create a function called get20s() that takes data as an argument and returns an 
 function get20s(data){
   const artists20s = [];
   for (let i = 0; i < artists.length; i++){
-    if (artists[i].years === data){
+    if (artists[i].years === "1907 - 1954" || artists[i].years === "1904 - 1989"){
       artists20s.push(artists[i].name);
     };
   }
   return artists20s;
 }
 
-// console.log(get20s(artists, 1900-2000));
-
-
-// function get20s(array, data){
-//   const artists20s = [];
-//   for (let i = 0; i >= array.length; i++){
-//     if (array.includes(data) === true){
-//       artists20s.push(array.find(i));
-//       return artists20s;
-//     };
-//   }
-// }
-// console.log(get20s(artists, 1900-2000));
-
-/* Needs more work. Unable to get code to pass autograder test */
-
+console.log(get20s(artists, 1900-2000));
 
 
 
