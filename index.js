@@ -284,9 +284,9 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-/* First set of code -- does not pass autograder but produces intended results in console */
+// First code attempt -- does not pass test and is not really passing an object as much as it is creating a new entry based on a pre-defined object contained within the function.
 
-// function addArtist(object){  
+// function addArtist(){  
 //   artists.push({
 //   id: 20,
 //   name: "Felipe Slaughter-Quintero",
@@ -294,11 +294,10 @@ At the end, this function should return the new array with information added"*/
 //   genre: "Modern Contemporary",
 //   nationality: "American",
 //   bio: "Felipe was born in California and studied various forms of art, including drawing, painting, clay sculpture and digital art."});
-
-//   artists.push(object);
 //   return artists;
 //   }
 // addArtist();
+
 
 function addArtist(id1, name1, years1, genre1, nationality1, bio1){
   const newArtist = new Object();
@@ -312,15 +311,8 @@ function addArtist(id1, name1, years1, genre1, nationality1, bio1){
   return artists;
   }
 
-// addArtist(20, "Felipe Slaughter-Quintero", "1983 - Current", "Modern Contemporary", "American", "Lorem ipsum");
+addArtist(20, "Felipe Slaughter-Quintero", "1983 - Current", "Modern Contemporary", "American", "Lorem ipsum");
 
-// addArtist({
-//   id: 20,
-//   name: "Felipe Slaughter-Quintero",
-//   years: "1983 - Current",
-//   genre: "Modern Contemporary",
-//   nationality: "American",
-//   bio: "Lorem ipsum"});
 
 /* does not pass the autograder but produces the intended results in console */
   
