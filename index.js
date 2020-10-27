@@ -314,6 +314,8 @@ function addArtist(id1, name1, years1, genre1, nationality1, bio1){
 addArtist(20, "Felipe Slaughter-Quintero", "1983 - Current", "Modern Contemporary", "American", "Lorem ipsum");
 
 
+
+
 /* does not pass the autograder but produces the intended results in console */
   
 
