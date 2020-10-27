@@ -265,10 +265,10 @@ Create a function called `removeArtist` that takes two arguments:
 function removeArtist(array, index) {
   const artistIndex = array.indexOf(index);
   array.splice(artistIndex, 1);
+  return array.length;
   console.log(array.length);
 }
    
-/* does not pass autograder test but produces intended results in the console */
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -312,7 +312,7 @@ function addArtist(id1, name1, years1, genre1, nationality1, bio1){
   return artists;
   }
 
-addArtist(20, "Felipe Slaughter-Quintero", "1983 - Current", "Modern Contemporary", "American", "Lorem ipsum");
+// addArtist(20, "Felipe Slaughter-Quintero", "1983 - Current", "Modern Contemporary", "American", "Lorem ipsum");
 
 // addArtist({
 //   id: 20,
